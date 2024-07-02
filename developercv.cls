@@ -127,7 +127,7 @@
 		\pgfmathparse{(\barwidth*\thebarcount)+(\barsep*\thebarcount)}
 		\let\barx\pgfmathresult
 		
-		\filldraw[fill=olive, draw=none] (0,-\barx) rectangle (\barone,-\barx-\barwidth);
+		\filldraw[fill=black, draw=none] (0,-\barx) rectangle (\barone,-\barx-\barwidth);
 		
 		\node [label=180:\colorbox{black}{\textcolor{white}{##1}}] at (0,-\barx-0.175) {};
 		\addtocounter{barcount}{1}
@@ -176,7 +176,7 @@
 
 \newcommand{\asect}[1]{% The only parameter is the section text
 	\vspace{\baselineskip} % Whitespace before the section title
-	\colorbox{olive}{\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\% Section title
+	\colorbox{black}{\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\% Section title
 }
 %----------------------------------------------------------------------------------------
 %	ENTRY LIST

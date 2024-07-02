@@ -35,9 +35,9 @@
 	
 	% If your name is very short, use just one of the lines below
 	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
-	\colorbox{olive}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Jakob}}}}} % First name
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Jakob}}}}} % First name
 	
-	\colorbox{pink}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Waibel}}}}} % Last name
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Waibel}}}}} % Last name
 	
 	\vspace{6pt}
 	
@@ -77,11 +77,11 @@
 \begin{minipage}[t]{0.4\textwidth} % 50% of the page for the skills bar chart
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\begin{barchart}{5.5}
-		\baritem{Rust}{60}
-		\baritem{Go}{40}
+		\baritem{Rust}{70}
+		\baritem{Go}{60}
         \baritem{C++}{40}
-		\baritem{Linux}{40}
-        \baritem{DevOps}{60}
+		\baritem{Linux}{70}
+        \baritem{DevOps}{50}
 	\end{barchart}
 \end{minipage}
 
@@ -126,7 +126,14 @@
 
 \begin{entrylist}
 	\entry
-        {2024}
+		{2024}
+		{Ship Routing}
+		{University of Stuttgart}
+		{This project required the implementation and optimization of street routing algorithms while applied to ship-routing on the sea. I chose to implement the graph generation using quad-trees and the routing using a combination of contraction hierarchies and hub labels.
+		\\ \texttt{Rust}\slashsep\texttt{Algorithms}\slashsep\texttt{Theoretical Computer Science}}	
+	
+	\entry
+        {2022 -- now}
         {Lurk - A (pretty) Simple Alternative to strace}
         {Open Source}
         {The goal of this project was to develop a refined version of strace that allows parsing output via \texttt{jq} while, instead of strace, formatting the output in a human-readable form.
